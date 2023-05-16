@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title style="font-family: 'Montserrat', sans-serif;">David Otero DEV</title>
+      <!-- Incluimos nuestro archivo de estilos compilado de Tailwind -->
+      <link rel="stylesheet" href="../dist/styles.css" type="text/css">
+      <link rel="stylesheet" href="../src/styles.css" type="text/css">
+      <link rel="stylesheet" href="../stylesheets/styles.css" type="text/css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <!-- Hind Madurai -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap">
+      <!-- Montserrat -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+      <!-- Asap -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asap&display=swap">
+   </head>
+   <body>
+      <!-- Barra de navegación -->
+      <nav class="bg-green-800">
+         <div class="container mx-auto m p-6">
+            <div class="flex items-center justify-between flex-wrap">
+               <div class="flex items-center flex-shrink-0 text-white mr-6">
+                  <span class="font-semibold text-xl tracking-tight">DO</span>
+               </div>
+               <!-- Botón de expansión -->
+               <div class="block lg:hidden">
+                  <button id="menu-btn" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menú</title>
+                        <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"/>
+                     </svg>
+                  </button>
+               </div>
+               <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
+                  <div id="cont_menu" class="text-sm lg:flex-grow ">
+                     <a href="#sobre-mi" class="block font-bold mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100 mr-8 lg:ml-8">
+                     Sobre mí
+                     </a>
+                     <a href="#proyectos" class="block font-bold mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100 mr-8">
+                     Proyectos
+                     </a>
+                     <a href="#experiencia-laboral" class="block font-bold mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100 mr-8">
+                     Experiencia
+                     </a>
+                     <a href="#formacion" class="block font-bold mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100">
+                     Formación
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Portada -->
+      <section id="portada" class="secciones bg-green-900 ">
+         <div id="cont_portada" class="container mx-auto p-6 items-center">
+            <div class="imagen-contenedor">
+               <img class="w-80 h-80 rounded-full object-cover object-center" src="https://source.unsplash.com/random/800x602" alt="Proyecto 3">
+             </div>
+            <h1 class="text-4xl font-bold mb-2 text-white" style="font-family: 'Montserrat', sans-serif;">David Otero</h1>
+            <h2 class="text-2xl font-bold italic mb-2 text-white" style="  font-family: 'Asap', sans-serif;">Desarrollador de software</h2>
+            <div class="flex mt-8" style="align-items: center; justify-content: center; gap: 10px;">
+               <a href="mailto:daotdia@gmail.com" target="_blank" class="inline-block bg-green-700 hover:bg-green-600 text-white font-semibold py-3 px-4 border border-gray-700 rounded mr-2">
+                  <span class="flex items-center">
+                     <i class="fas fa-envelope fa-lg"></i>
+                  </span>
+               </a>               
+               <a href="https://github.com/daotdia" target="_blank" class="inline-block bg-green-700 hover:bg-green-600 text-white font-semibold py-3 px-4 border border-gray-700 rounded mr-2">
+                  <span class="flex items-center">
+                     <i class="fab fa-github fa-lg"></i>
+                  </span>
+               </a>               
+               <a href="#" target="_blank" class="inline-block font-bold text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white flex items-center">
+                  Descargar CV
+               </a>                            
+            </div>
+         </div>
+      </section>
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="bg-green-100">
+         <div class="secciones container mx-auto p-6">
+            <h2 class="titulo-seccion text-2xl font-bold mb-2">Sobre mí</h2>
+            <p class="text-lg mb-4">
+               Soy <strong>graduado informático</strong> y apasionado en la creación de valor a terceros. 
+               Quiero aportar todas mis capacidades y esfuerzos para conseguir <strong> maximizar el aporte de valor de su empresa</strong>. 
+            </p>
+            <p class="text-lg mb-4">
+               Hasta el momento he trabajado <strong>+5 años en el sector salud e investigación biomédica</strong>. 
+               Sé que en el sector de desarrollo software podré aportar aún más valor.
+               <strong>Tengo mucho que aprender, pero estoy preparado para ello</strong>. 
+            </p>
+         </div>
+      </section>
+      <!-- Proyectos -->
+      <section id="proyectos" class="bg-green-200">
+         <div class="secciones container mx-auto p-6">
+            <h2 class="titulo-seccion text-2xl font-bold mb-2">Proyectos</h2>
+            <div class="flex flex-wrap justify-center">
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daodiaz/Compilador_daodiaz" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-contain object-center" src="https://i.postimg.cc/43Sw7Gb4/Captura-de-pantalla-de-2023-05-14-18-06-09.png" alt="Compilador">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">Compilador lenguaje CEs</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Compila <strong>lenguaje estilo C pero en español</strong>. Tras input de texto; tokeniza, realiza análisis léxico, sintáctico, semántico y traduce a código intermedio y máquina listo para ejecutar en procesador simulado.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Java</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">JFlex</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">JCup</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Código Intermedio</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Código Máquina</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>               
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/RecipeToShop2" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-contain object-center" src="https://i.postimg.cc/QdxLGpX2/Imagen-aplicacion.jpg" alt="RecipeToShop">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">RecipeToShop</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Aplicación multiplataforma implementada en KMM. A partir de tu despensa y recetas calcula la lista de la compra en Carrefour, Mercadona o Día.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">KMM</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Kotlin</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">SwiftUI</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Python</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Selenium</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Hilt</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">MVVM</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>               
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/Reservations" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-cover object-center" src="https://camo.githubusercontent.com/f318bc9d933c24d43483c70098c3e8109f896be8cfc822cb87a21064f4763662/68747470733a2f2f696d6775722e636f6d2f7049774d5554412e706e67" alt="RecipeToShop">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">Reservations</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Web a modo de ejemplo para realizar una reserva de un asiento utilizando metodología Ajax. Contenida en varios servicios Docker.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Javascript</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">PHP</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">HTML</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">CSS</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Python</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">PstgreSQL</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Docker</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Docker Compose</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">JQuery</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Bootstrap</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Apache</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Nginx</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>               
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/MonitorSistema_Clone" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-cover object-center" src="https://comoinstalar.info/wp-content/uploads/2022/02/gnome-system-monitor-e1569493615152.png" alt="Compilador">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">Clon del Monitor del Sistema</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Muestra procesos en ejecución e informacion sobre los mismos de manera similar a un monitor de sistema operativo.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Script</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Bash</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>               
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/angulartutorial" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-cover object-center" src="https://i.postimg.cc/XYMyz9T4/Ejemplo-tutorial-angular.png" alt="Compilador">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">Restaurante Angular</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Es un ejemplo de una web de restaurante realizada con Angular. Realizada a modo tutorial siguiendo curso Coursera de Angular.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Angular</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">TypeScript</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">RXJS</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">SCSS</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">PostCSS</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">WebPack</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Karma</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/SistemaArchivosDistribuidos" target="_blank">
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-cover object-center" src="https://3.bp.blogspot.com/-Ap9YTSYOyLs/WlGrIVUmYZI/AAAAAAAAAJQ/UtHcxqcy6bIXlUWNA5iknp6MJ8ZUvVgMQCLcBGAs/s640/databases-template-powerpoint-backgrounds.jpg" alt="Compilador">
+                        <h3 class="text-lg font-bold text-center mt-4 mb-2">Sistema de archivos distribuidos</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Sistema distribuido donde distintos clientes a la vez pueden manipular un mismo estado de sistema de archivos y compartir archivos con Java RMI.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Java</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">Java RMI</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>               
+               <div class="card-container mb-4">
+                  <a href="https://github.com/daotdia/Portafolio-JSVanila" target="_blank">
+                     <div class="project-card h-600 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img class="max-w-full h-48 object-cover object-center" src="https://github.com/daotdia/Portafolio-JSVanila/raw/main/Worlde.png" alt="Compilador">
+                        <h3 class="text-lg font-bold text-center  mt-4 mb-2">Wordle</h3>
+                        <div class="p-4 flex-grow flex flex-col justify-center">
+                           <p class="text-gray-700 text-center">Es un ejemplo de juego Wordle sencillo. Es una web estática donde se interactúa con la DOM para lograr la funcionalidad.</p>
+                        </div>
+                        <div class="grid grid-flow-row auto-rows-min gap-2 mt-4 justify-center">
+                           <div class="flex justify-center flex-wrap p-4">
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">HTML</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">CSS</span>
+                              <span class="techtag inline-block bg-blue-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-1">JS Vanila</span>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="experiencia-laboral" class="bg-green-100">
+         <div class="secciones container mx-auto p-6">
+            <h2 class="titulo-seccion text-2xl font-bold mb-12">Experiencia laboral</h2>
+            <ul class="timeline">
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2017-2022</p>
+                   <h3>Técnico Superior de Laboratorio</h3>
+                   <h4>Laboratorio Biología Molecular, Nutrición y Biotecnología (UIB), Baleares</h4>
+                   <p><strong>Gestión laboratorio</strong><br>Supervisión y coordinación diaria de los oficiales de laboratorio. Gestión de stocks, facturas y presupuestos de los productos y maquinaria del laboratorio. Control de riesgos laborales.</p>
+                   <p><strong>Apoyo experimental</strong><br>Manipulación de animales en experimentación animal. Realización de estudios histiológicos de los tejidos animales. Manipulación de muestras de sangre. Realización de charlas sobre nutrición a mayores.</p>
+                 </div>
+               </li>
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2016</p>
+                   <h3>Becario de investigación</h3>
+                   <h4>Hospital Universitario y Politécnico la Fe, Valencia</h4>
+                   <p>Apoyo en el desarrollo de la aplicación móvil MyCyFAPP destinada a mejorar la calidad de vida de los pacientes con fibrosis quística.</p>
+                 </div>
+               </li>
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2015</p>
+                   <h3>Nutricionista clínico</h3>
+                   <h4>Hospital General Universitario de Valencia</h4>
+                   <p>Monitorización y cribado nutricional de pacientes en planta. Consultas externas nutricionales. Apoyo nutricional en consultas pediátricas. Realización de charlas a grupos de padres y niños para mejorar su alimentación.</p>
+                 </div>
+               </li>
+             </ul>  
+         </div>
+      </section>
+       
+      <!-- Formación -->
+      <section id="formacion" class="bg-green-200">
+         <div class="secciones container mx-auto p-6">
+            <h2 class="titulo-seccion text-2xl font-bold mb-12">Formación</h2>
+            <ul class="timeline">
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2018-2022</p>
+                   <h3>Grado en Ingeniería Informática</h3>
+                   <h4>Universidad Nacional de Educación a Distancia (UNED)</h4>
+                   <p>Realización de segundo, tercer y cuarto año</p>
+                 </div>
+               </li>
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2016-2017</p>
+                   <h3>Máster en Nutrigenómica</h3>
+                   <h4>Universidad de las Islas Baleares (UIB)</h4>
+                 </div>
+               </li>
+               <li class="timeline-event">
+                 <label class="timeline-event-icon"></label>
+                 <div class="timeline-event-copy">
+                   <p class="timeline-event-thumbnail">2012-2016</p>
+                   <h3>Grado en Nutrición Humana y Dietética</h3>
+                   <h4>Universidad de Valencia (UV)</h4>
+                 </div>
+               </li>
+               <li class="timeline-event">
+                  <label class="timeline-event-icon"></label>
+                  <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">2011-2012</p>
+                    <h3>Grado en Ingeniería Informática</h3>
+                    <h4>Universidad Politécnica de Valencia (UPV)</h4>
+                    <p>Realización del primer año</p>
+                  </div>
+                </li>
+                <li class="timeline-event">
+                  <label class="timeline-event-icon"></label>
+                  <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">2008-2011</p>
+                    <h3>Bachiller Científico-Técnico</h3>
+                    <h4>Instituto Lluis Vives, Valencia</h4>
+                  </div>
+                </li>
+             </ul>  
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-green-800 text-white">
+         <div class="container mx-auto py-4 px-6">
+            <div class="flex justify-between items-center">
+               <div>
+                  <h3 class="text-lg font-medium">David Otero</h3>
+                  <p class="text-sm">Desarrollador de software</p>
+                  <p class="text-sm">626728560</p>
+                  <p class="text-sm">daotdia@gmail.com</p>
+               </div>
+               <div>
+                  <a href="#" target="_blank" class="mr-4 text-white hover:text-green-100">Descargar CV</a>
+                  <a href="mailto:daotdia@gmail.com" target="_blank" class="mr-4 text-white hover:text-green-100">Enviar correo</a>
+                  <a href="tel:+34626728560" target="_blank" class="text-white hover:text-green-100">Teléfono</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            // Obtén referencias a los elementos del menú y del botón
+            var menu = document.getElementById('menu');
+            var menuBtn = document.getElementById('menu-btn');
+         
+            // Agrega un controlador de eventos al botón del menú
+            menuBtn.addEventListener('click', function () {
+               // Cambia el estado de visualización del menú cuando se hace clic en el botón
+               if (menu.classList.contains('hide')) {
+            menu.classList.remove('hide');
+         } else {
+            menu.classList.add('hide');
+         }
+            });
+         });
+
+      </script>
+   </body>
+</html>

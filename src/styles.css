@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+/* Clase para ocultar el menú */
+.hide {
+    display: none;
+ }
+
+.container{
+    max-width: 900px;
+}
+
+.secciones{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.titulo-seccion{
+    padding-bottom: 40px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cont_portada{
+    text-align: center; /* Alineación del contenido en el centro */
+    display: flex; /* Habilita el uso de flexbox para centrar verticalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column; /* Alinear el contenido en dirección vertical */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+#cont_portada .imagen-contenedor {
+    padding-bottom: 32px;
+}
+
+#cont_portada > *{
+    padding: 4px;
+}
+
+.card-container{
+    width: 100%;
+    margin-top: 8px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+}
+
+.project-card {
+    transition: transform 0.5s, box-shadow 0.5s;
+    height: 525px;
+    will-change: transform, box-shadow;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 680px) {
+    /* A partir de 628px (pantalla grande) */
+    .project-card {
+        height: 650px;
+    }
+
+    .card-container{
+        width: 270px;
+    }
+
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+.techtag{
+    background-color: #118d53;
+    color: white;
+}
+
+/* Estilo para las cards de proyectos */
+.bg-white.rounded-lg.shadow-lg.overflow-hidden {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el hover con un color azul claro difuminado */
+.bg-white.rounded-lg.shadow-lg.overflow-hidden::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(173, 216, 230, 0); /* El color azul claro difuminado (lightblue en RGB es 173, 216, 230) */
+    transition: background 0.3s ease;
+}
+
+/* Cuando se pasa el cursor sobre la card, cambiar el background del pseudo-elemento */
+.bg-white.rounded-lg.shadow-lg.overflow-hidden:hover::after {
+    background: rgba(215, 233, 220, 0.5);
+}
+
+
+
+
+
+
+
+/*Me gustaría que el contenido del body esté centrado. Me gustaría que la web fuese responsive. Me gustaria que la cronologia fuese más vistosa los colores de los puntos son muy sosos.Vamos a hacerlo paso a paso, primero vamos a mejorar el apartado nav: */
