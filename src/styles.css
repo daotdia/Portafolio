@@ -21,13 +21,11 @@ strong {
     display: none;
  }
 
-.container{
-    max-width: 900px;
-}
-
 .secciones{
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 900px  !important; 
+
 }
 
 .titulo-seccion{
@@ -52,6 +50,21 @@ strong {
     padding: 4px;
 }
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.imagen-contenedor img {
+    animation: fadeIn 2s;
+    box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.5); /* Difumina los bordes con un tono verde */
+    filter: hue-rotate(90deg);
+}
+
 .card-container{
     width: 100%;
     margin-top: 8px;
@@ -61,7 +74,7 @@ strong {
 
 .project-card {
     transition: transform 0.5s, box-shadow 0.5s;
-    height: 525px;
+    height: 575px;
     will-change: transform, box-shadow;
     display: flex;
     flex-direction: column;
@@ -113,10 +126,30 @@ strong {
     background: rgba(215, 233, 220, 0.5);
 }
 
+/* Para dispositivos xs y menores */
+@media (max-width: 639px) {
+    .secciones.time {
+      width: 310px;
+    }
+  }
+  
+  /* Para dispositivos entre sm (640px) y md (767px) */
+  @media (min-width: 640px) and (max-width: 850px) {
+    .secciones.time  {
+      width: 550px;
+    }
+    .secciones.mi{
+      width: 550px;
+    }
+  }
 
+  /* Para dispositivos entre sm (640px) y md (767px) */
+  @media (min-width: 851px) and (max-width: 950px) {
+    .secciones.time {
+      width: 750px;
+    }
+  }
+  
 
+  
 
-
-
-
-/*Me gustaría que el contenido del body esté centrado. Me gustaría que la web fuese responsive. Me gustaria que la cronologia fuese más vistosa los colores de los puntos son muy sosos.Vamos a hacerlo paso a paso, primero vamos a mejorar el apartado nav: */

@@ -55,11 +55,11 @@
          </div>
       </nav>
       <!-- Portada -->
-      <section id="portada" class="secciones bg-green-900 ">
-         <div id="cont_portada" class="container mx-auto p-6 items-center">
+      <section id="portada" class=" bg-green-900 ">
+         <div id="cont_portada" class="secciones mx-auto p-6 items-center">
             <div class="imagen-contenedor">
-               <img class="w-80 h-80 rounded-full object-cover object-center" src="https://source.unsplash.com/random/800x602" alt="Proyecto 3">
-             </div>
+               <img class="w-80 h-80 rounded-full object-cover object-center filter brightness-110 saturate-125" src="../Resources/Retrato molona.png" alt="DO">
+            </div>            
             <h1 class="text-4xl font-bold mb-2 text-white" style="font-family: 'Montserrat', sans-serif;">David Otero</h1>
             <h2 class="text-2xl font-bold italic mb-2 text-white" style="  font-family: 'Asap', sans-serif;">Desarrollador de software</h2>
             <div class="flex mt-8" style="align-items: center; justify-content: center; gap: 10px;">
@@ -73,7 +73,7 @@
                      <i class="fab fa-github fa-lg"></i>
                   </span>
                </a>               
-               <a href="#" target="_blank" class="inline-block font-bold text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white flex items-center">
+               <a href="../Resources/CV final primero.pdf" target="_blank" class="inline-block font-bold text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white flex items-center">
                   Descargar CV
                </a>                            
             </div>
@@ -81,7 +81,7 @@
       </section>
       <!-- Sobre mí -->
       <section id="sobre-mi" class="bg-green-100">
-         <div class="secciones container mx-auto p-6">
+         <div class="secciones mi mx-auto p-6">
             <h2 class="titulo-seccion text-2xl font-bold mb-2">Sobre mí</h2>
             <p class="text-lg mb-4">
                Soy <strong>graduado informático</strong> y apasionado en la creación de valor a terceros. 
@@ -96,7 +96,7 @@
       </section>
       <!-- Proyectos -->
       <section id="proyectos" class="bg-green-200">
-         <div class="secciones container mx-auto p-6">
+         <div class="secciones  mx-auto p-6">
             <h2 class="titulo-seccion text-2xl font-bold mb-2">Proyectos</h2>
             <div class="flex flex-wrap justify-center">
                <div class="card-container mb-4">
@@ -122,8 +122,7 @@
                <div class="card-container mb-4">
                   <a href="https://github.com/daotdia/RecipeToShop2" target="_blank">
                      <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <img class="max-w-full h-48 object-contain object-center" src="https://i.postimg.cc/QdxLGpX2/Imagen-aplicacion.jpg" alt="RecipeToShop">
-                        <h3 class="text-lg font-bold text-center mt-4 mb-2">RecipeToShop</h3>
+                        <img class="w-full h-48 object-cover object-center sm:h-48" src="https://i.postimg.cc/QdxLGpX2/Imagen-aplicacion.jpg" alt="RecipeToShop">                        <h3 class="text-lg font-bold text-center mt-4 mb-2">RecipeToShop</h3>
                         <div class="p-4 flex-grow flex flex-col justify-center">
                            <p class="text-gray-700 text-center">Aplicación multiplataforma implementada en KMM. A partir de tu despensa y recetas calcula la lista de la compra en Carrefour, Mercadona o Día.</p>
                         </div>
@@ -246,7 +245,7 @@
          </div>
       </section>
       <section id="experiencia-laboral" class="bg-green-100">
-         <div class="secciones container mx-auto p-6">
+         <div class="secciones time mx-auto p-6">
             <h2 class="titulo-seccion text-2xl font-bold mb-12">Experiencia laboral</h2>
             <ul class="timeline">
                <li class="timeline-event">
@@ -283,8 +282,8 @@
        
       <!-- Formación -->
       <section id="formacion" class="bg-green-200">
-         <div class="secciones container mx-auto p-6">
-            <h2 class="titulo-seccion text-2xl font-bold mb-12">Formación</h2>
+         <div class="secciones time mx-auto p-6">
+            <h2 class="titulo-seccion mx-auto text-2xl font-bold mb-12">Formación</h2>
             <ul class="timeline">
                <li class="timeline-event">
                  <label class="timeline-event-icon"></label>
@@ -333,22 +332,14 @@
       </section>
       <!-- Footer -->
       <footer class="bg-green-800 text-white">
-         <div class="container mx-auto py-4 px-6">
-            <div class="flex justify-between items-center">
-               <div>
-                  <h3 class="text-lg font-medium">David Otero</h3>
-                  <p class="text-sm">Desarrollador de software</p>
-                  <p class="text-sm">626728560</p>
-                  <p class="text-sm">daotdia@gmail.com</p>
-               </div>
-               <div>
-                  <a href="#" target="_blank" class="mr-4 text-white hover:text-green-100">Descargar CV</a>
-                  <a href="mailto:daotdia@gmail.com" target="_blank" class="mr-4 text-white hover:text-green-100">Enviar correo</a>
-                  <a href="tel:+34626728560" target="_blank" class="text-white hover:text-green-100">Teléfono</a>
-               </div>
+         <div class="container py-4 px-6 flex justify-between">
+            <div class="flex-grow">
+               <h3 class="text-lg font-medium">David Otero</h3>
+               <p class="text-sm">626728560</p>
+               <p class="text-sm">daotdia@gmail.com</p>
             </div>
          </div>
-      </footer>
+      </footer>      
       <script>
          document.addEventListener('DOMContentLoaded', function () {
             // Obtén referencias a los elementos del menú y del botón

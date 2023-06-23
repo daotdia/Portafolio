@@ -14,7 +14,7 @@
 .timeline {
   margin: -0.85em;
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
 }
 /* line 24, ../sass/styles.scss */
 .timeline:before {
