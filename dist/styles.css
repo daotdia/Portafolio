@@ -657,14 +657,6 @@ video {
   grid-auto-rows: min-content;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -687,16 +679,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -991,7 +973,7 @@ strong {
 
 .project-card {
   transition: transform 0.5s, box-shadow 0.5s;
-  height: 575px;
+  height: 625px;
   will-change: transform, box-shadow;
   display: flex;
   flex-direction: column;

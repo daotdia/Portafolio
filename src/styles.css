@@ -74,7 +74,7 @@ strong {
 
 .project-card {
     transition: transform 0.5s, box-shadow 0.5s;
-    height: 575px;
+    height: 625px;
     will-change: transform, box-shadow;
     display: flex;
     flex-direction: column;
